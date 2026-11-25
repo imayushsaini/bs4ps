@@ -1,25 +1,38 @@
 # BombSquad (Ballistica) - PlayStation 4 Homebrew Port
 
 [![Platform: PS4](https://img.shields.io/badge/Platform-PlayStation%204-003791?style=flat&logo=playstation)](https://github.com/imayushsaini/bs4ps)
+[![BombSquad: 1.8.10](https://img.shields.io/badge/BombSquad-v1.8.10%20(build%2023095)-orange?style=flat)](https://github.com/imayushsaini/bs4ps)
 [![Toolchain: OpenOrbis](https://img.shields.io/badge/Toolchain-OpenOrbis-blueviolet?style=flat)](https://github.com/OpenOrbis/OpenOrbis-PS4-Toolchain)
 [![Target: GoldHEN](https://img.shields.io/badge/Environment-GoldHEN-gold?style=flat)](https://github.com/SiSTR0/GoldHEN)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Status: Playable](https://img.shields.io/badge/Status-60FPS%20Playable-success)](https://github.com/imayushsaini/bs4ps)
 
-An unofficial, open-source homebrew port of **BombSquad** (powered by the **Ballistica** engine) for jailbroken PlayStation 4 consoles.
+An unofficial, homebrew port of **BombSquad** (powered by the **Ballistica** engine) for jailbroken PlayStation 4 consoles, running the **BombSquad 1.8.10** build.
 
-This port runs natively on the PS4 hardware using the open-source **OpenOrbis PS4 Toolchain**, featuring hardware-accelerated OpenGL ES rendering (via Piglet), full DualShock 4 rumble/vibration, local multiplayer for up to 8 players, and persistent hardware texture caching.
+This port runs natively on the PS4 hardware using the open-source **OpenOrbis PS4 Toolchain**, featuring hardware-accelerated OpenGL ES rendering (via Piglet), full DualShock 4 rumble/vibration, local multiplayer / co-op for multiple players, and persistent hardware texture caching.
 
 ---
 
 ## 🎮 Features
 
+- **BombSquad 1.8.10 Engine:** Native port running the BombSquad 1.8.10 build.
 - **Smooth 60 FPS Gameplay:** Hardware-accelerated graphics using PS4's Piglet GLES2 stack.
 - **Full DualShock 4 Support:** Native controller input mapping with haptic vibration / rumble support.
-- **Local Multiplayer:** Connect multiple DualShock 4 controllers on the same console for party battles.
+- **Local Multiplayer & Co-op:** Connect multiple DualShock 4 controllers on the same console for party battles and co-op campaigns.
 - **Persistent Texture Cache:** High-resolution textures are decompressed and cached to internal storage on first launch for fast subsequent boot times.
 - **Pre-compiled Python Bytecode:** Integrated embedded CPython 3.14 with pre-compiled `.pyc` bytecode.
 - **Complete Sound & Music Support:** Multi-channel 3D positional audio.
+
+---
+
+## ⚠️ Known Issues
+
+1. **Boot time is long with a black screen:**  
+   During startup, the console displays a black screen while engine assets and systems initialize. Work is actively in progress to optimize startup times. This does not impact gameplay or in-game performance once loaded.
+2. **Online play is not enabled:**  
+   Online multiplayer / matchmaking services are currently disabled in this build.
+3. **LAN play with nearby devices not working:**  
+   While local multiplayer with multiple DualShock 4 controllers on the same console is fully working, local network (LAN) play with nearby devices is currently not functioning.
 
 ---
 
@@ -129,3 +142,12 @@ This project is an unofficial, non-commercial community homebrew port intended s
 - This project is **not** affiliated with, authorized, or endorsed by Sony Interactive Entertainment Inc.
 - All code contributed for the PS4 port is released under the [MIT License](LICENSE).
 - BombSquad and Ballistica game code are licensed under the MIT License by Eric Froemling. Game assets remain the property of their respective creator. If you enjoy the game, please support the official release on official supported platforms at [froemling.net](https://www.froemling.net/apps/bombsquad).
+
+---
+
+## 🌐 Community & Links
+
+- **BombSquad PlayStation Community:** [https://bombsquad-community.web.app/playstation](https://bombsquad-community.web.app/playstation)
+- **Official BombSquad Website:** [https://www.froemling.net/apps/bombsquad](https://www.froemling.net/apps/bombsquad)
+- **Ballistica Engine GitHub:** [https://github.com/efroemling/ballistica](https://github.com/efroemling/ballistica)
+
